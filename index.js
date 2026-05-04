@@ -24,6 +24,6 @@ app.get("/products",(req,res)=>{
     var data=fs.readFileSync("products.txt");
 
 })
-app.listen(3500,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("server is Running");
 })
